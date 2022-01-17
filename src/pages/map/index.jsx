@@ -1,6 +1,6 @@
 import { ContentMap } from "../../components/content-map";
-import { Header } from "../../components/header";
-// import { Main } from "../../components/main";
+import { CurrentLocation } from "../../components/current-location";
+
 import { Sidebar } from "../../components/sidebar";
 
 import "./styles.scss";
@@ -11,13 +11,15 @@ export function MapPage() {
       <div className="sidebar">
         <Sidebar />
       </div>
-      <div className="header">
-        <Header />
-      </div>
+      <section className="header">
+        <div className="header-filter">
+          <h1>Mapa</h1>
+        </div>
+        <CurrentLocation />
+      </section>
       <div className="main">
         <ContentMap />
       </div>
     </section>
   );
 }
-

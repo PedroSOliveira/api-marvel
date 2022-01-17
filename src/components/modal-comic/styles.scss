@@ -1,9 +1,7 @@
 .content-modal {
   width: 600px;
   max-height: 200px;
-  /* background: var(--red); */
-  //   background: red;
-  //   background: linear-gradient(to right, #dd0303, #f80101, #970808, #560c0c);
+
   background: linear-gradient(
     to right,
     #4c4c4d,
@@ -12,26 +10,12 @@
     #212129,
     #393941,
     #212129,
-    #212129,
-    // #0f0699,
-    // #080b27,
-    // #150e79,
-    // #080b27,
-    // #881111,
-    // #560c0c,
-    // #1d1d2a,
-    // #1d1d2a
+    #212129
   );
-  //   box-shadow: inset 0 0 1em #121213, 0 0 1em #1e1e1f;
   border-radius: 3rem;
   border: none;
   display: grid;
   grid-template-columns: 1fr 2fr;
-
-  //   position: absolute;
-  //   top: 20%;
-  //   left: 20%;
-  //   z-index: 999;
 
   .image-comic {
     background: linear-gradient(to left, transparent 1%, rgb(14, 13, 13));
@@ -45,13 +29,11 @@
 
   .details {
     width: 100%;
-    // margin: 10%;
-    // max-height: 50%;
+
     display: flex;
     flex-direction: column;
-    // grid-column: 1fr;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: left;
 
     gap: 1rem;
 
@@ -73,7 +55,7 @@
     }
 
     h1 {
-      max-width: 90%;
+      max-width: 100%;
       font-size: 1.5em;
       margin-top: 0.5rem;
       font-weight: 700;
@@ -86,26 +68,11 @@
     }
 
     p {
-      max-width: 90%;
+      max-width: 100%;
       font-size: 0.9em;
       letter-spacing: 0.1em;
       padding: 0rem;
     }
   }
 
-  .image-stream {
-    width: 4rem;
-    height: 4rem;
-
-    padding: 0.25rem 0;
-    border-radius: 1rem;
-
-    background: #d9d9e7;
-  }
-
-  .stream {
-    background: red;
-    display: flex;
-    flex-direction: row;
-  }
 }

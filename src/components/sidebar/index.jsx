@@ -4,17 +4,10 @@ import spider from "../../assets/spider-real.png";
 
 import { Link } from "react-router-dom";
 
-// import { useHistory } from "react-router-dom";
-
 import "./styles.scss";
 
 export function Sidebar() {
-  // const history = useHistory();
-
-  // const handleNavigatorToHome = () => history.push("/");
-
-  // const handleNavigatorToMap = () => history.push("/map");
-
+ 
   return (
     <section className="sidebar">
       <img className="sidebar-logo" src={logo} alt="Logo marvel" />

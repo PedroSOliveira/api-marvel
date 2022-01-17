@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  // background: red;
 
   p {
     color: #3e68c2;
@@ -43,7 +42,6 @@
     font-size: 0.75em;
     background: linear-gradient(to right, #0f0b41, #040c58, #881111, #560c0c);
     margin: 0 auto;
-    // width: 13%;
     padding: 10px;
     border-radius: 4px;
     position: absolute;
@@ -52,23 +50,16 @@
     z-index: 999;
 
     border-start-end-radius: 2.75rem;
-    // left: 60%;
   }
 }
 
 .card {
-  //   display: flex;
-  //   justify-content: center;
-  //   margin: 0 auto;
   width: 150px;
   height: 200px;
   border-radius: 0.5rem;
-  // background: url("../../assets/capita-marvel.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  // filter: brightness(0.9);
 
   cursor: pointer;
 

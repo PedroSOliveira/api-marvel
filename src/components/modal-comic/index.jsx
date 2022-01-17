@@ -4,8 +4,6 @@ import { ServiceApiComics } from "../../services/Comics";
 
 import { useCallback, useEffect, useState } from "react";
 
-import thanos from "../../assets/thanos.png";
-import disneyImg from "../../assets/disney.png";
 import closeImg from "../../assets/close.svg";
 
 import "./styles.scss";
@@ -23,17 +21,15 @@ export function DetailsModal({ isOpen, onRequestClose, comicId }) {
           console.log(responseData);
         } catch (error) {
           alert(error.message);
-        } finally {
-          // setLoading(false);
         }
       }
     },
-    [ServiceApiComics]
+    []
   );
 
   useEffect(() => {
     getDataComic(comicId);
-  }, [comicId]);
+  }, [getDataComic, comicId]);
 
   return (
     <Modal
@@ -52,17 +48,6 @@ export function DetailsModal({ isOpen, onRequestClose, comicId }) {
         <div className="details">
           <h1>{comic?.title}</h1>
           <p>{comic?.description}</p>
-          {/* <footer className="stream">
-            <strong>Streaming:</strong>
-            <img className="image-stream" src={disneyImg} alt="Disney" />
-          </footer> */}
-          {/* <h1>Crítica</h1> */}
-          {/* <Rate
-            style={{ marginTop: -20, color: "red" }}
-            disabled
-            value={3}
-            defaultValue={3}
-          /> */}
         </div>
       </div>
 
@@ -71,9 +56,7 @@ export function DetailsModal({ isOpen, onRequestClose, comicId }) {
         onClick={onRequestClose}
         className="react-modal-close"
       >
-        {/* const { path, extension } = comic.thumbnail;
-image={`${path}.${extension}`} title={comic.title} */}
-        <img className={"image-stream"} src={disneyImg} />
+        <img src={closeImg} alt="Close" />
       </button>
     </Modal>
   );

@@ -10,7 +10,6 @@ const time = Number(new Date());
 // pub_key = 2ce20b7ffa510ed2f930b705171627b0
 const hash = md5(time + PRIVATE_KEY + PUBLIC_KEY);
 
-const title = 'Avengers';
 // const limit = 8;
 // const offset = 32;
 
@@ -18,12 +17,14 @@ const title = 'Avengers';
 
 export const ServiceApiComics = {
 
-  getAllComics: async (limit, offset) => {
+  getAllComics: async (limit, offset, title) => {
     try {
 
       // const response = await axios.get(`${BASE_URL}?ts=${time}&apikey=${PUBLIC_KEY}&hash=${hash}&limit=${limit}&offset=${offset}`);
-
-      const response = await axios.get(`${BASE_URL}`, {
+      let url = BASE_URL;
+      if(title) url += `?title=${title}`;
+      
+      const response = await axios.get(`${url}`, {
         params: { ts: time, apikey: PUBLIC_KEY, hash, limit, offset }
       });
       const comics = response.data.data;

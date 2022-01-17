@@ -3,13 +3,13 @@ import { Button } from "../button";
 
 import { useGetLocation } from "../../hooks/useGetLocation";
 
-import Geocode from "react-geocode";
+import iron from "../../assets/iron-animation.png";
 
-import { BiMap } from "react-icons/bi";
+import Geocode from "react-geocode";
 
 import "./styles.scss";
 
-export function Header({ renderInput }) {
+export function SendAdress({ renderInput }) {
   const [latitudeAdress, setLatitudeAdress] = useState(0);
   const [longitudeAdress, setLongitudeAdress] = useState(0);
   const [currentAdress, setCurrentAdress] = useState("Minha posição Atual");
@@ -61,26 +61,24 @@ export function Header({ renderInput }) {
   }, [coords, loadCurrentAddress, adressSend, loadLatLongAdressSend]);
 
   return (
-    <section className="header">
-      <div className="header-filter">
-        {renderInput ? (
-          <>
-            <input
-              placeholder="Cadastrar endereço de envio"
-              onChange={(e) => setAdressSend(e.target.value)}
-            />
-            <Button title="Cadastrar" onClick={handleSaveAdressSend} />
-          </>
-        ) : (
-          <h1>Mapa</h1>
-        )}
+    <aside>
+      <div className="aside-favorities">
+        <h1>Herói favorito</h1>
+        <div className="aside-list">
+          <img className="iron" src={iron} alt="Iron animation" />
+          <img className="iron" src={iron} alt="Iron animation" />
+          <img className="iron" src={iron} alt="Iron animation" />
+          <img className="iron" src={iron} alt="Iron animation" />
+        </div>
       </div>
-
-      <div className="header-location">
-        <p>
-          <BiMap /> {currentAdress}
-        </p>
+      <div className="aside-adress">
+        <h1>Cadastrar endereço de envio</h1>
+        <input
+          placeholder="Cadastrar endereço de envio"
+          onChange={(e) => setAdressSend(e.target.value)}
+        />
+        <Button title="Cadastrar" onClick={handleSaveAdressSend} />
       </div>
-    </section>
+    </aside>
   );
 }
