@@ -1,0 +1,118 @@
+$purple: #835afd;
+$red: #ea4335;
+$background: #f8f8f8;
+$light: #dbdcdd;
+$text-color: #29292e;
+$background-black: rgb(41, 41, 46);
+
+$background-black-900: #1d1d2a;
+// $background-black-900: #181b23;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $background-black-900;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  display: flex;
+  color: #dbdcdd;
+  text-decoration: none;
+  // list-style: none;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue #1d1d2a;
+  scroll-behavior: smooth;
+}
+
+.react-modal-overlay {
+  background: linear-gradient(
+    to right,
+    black 5%,
+    black 40%,
+    rgba(0, 0, 0, 0.4)
+  );
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-modal-content {
+  width: 100%;
+  max-width: 576px;
+  /* background: var(--background); */
+  /* padding: 3rem; */
+  position: relative;
+  border-radius: 1rem;
+  border: 0;
+  outline: 0;
+  // top: 12%;
+  // right: 15%;
+}
+
+.react-modal-close {
+  background: white;
+  position: absolute;
+  padding: 0.45rem;
+  color: white;
+  /* right: 0.25rem; */
+  top: 0.25rem;
+  right: 0;
+  // bottom: 1.5rem;
+  // right: -3rem;
+  /* right: 0; */
+  border: 0;
+  background: transparent;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
+
+*::-webkit-scrollbar {
+  border-radius: 3rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1d1d2a;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to right,
+    #1d1d2a,
+    #1d1d2a,
+    #1c1579,
+    #040c58,
+    #881111,
+    #560c0c,
+    #1d1d2a,
+    #1d1d2a
+  );
+  border-radius: 20px;
+  border: 5px solid #1d1d2a;
+}

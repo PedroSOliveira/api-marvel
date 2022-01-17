@@ -1,0 +1,32 @@
+.home {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-rows: 50px 150px 50px;
+    grid-template-areas:
+      "sidebar header header"
+      "sidebar main main"
+      "sidebar main main";
+    gap: 1.5rem 0;
+  
+    .sidenav {
+      grid-area: sidebar;
+    }
+  
+    .header {
+      grid-area: header;
+    }
+  
+    .main {
+      grid-area: main;
+    }
+  
+    .sidenav {
+      grid-area: sidebar;
+    }
+  
+    .sidenav {
+      grid-area: sidebar;
+    }
+  }
+  

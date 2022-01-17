@@ -1,0 +1,81 @@
+.content-card {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  // background: red;
+
+  p {
+    color: #3e68c2;
+    font-weight: 700;
+    font-size: 0.75em;
+    margin: 0 auto;
+
+    max-width: 20ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      filter: brightness(0.8);
+    }
+  }
+
+  p:last-child {
+    color: #d9d9e7;
+    font-weight: 500;
+  }
+
+  p:hover ~ span {
+    display: block;
+  }
+
+  span {
+    text-align: center;
+    display: none;
+    color: #d9d9e7;
+    font-weight: 600;
+    font-size: 0.75em;
+    background: linear-gradient(to right, #0f0b41, #040c58, #881111, #560c0c);
+    margin: 0 auto;
+    // width: 13%;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+
+    z-index: 999;
+
+    border-start-end-radius: 2.75rem;
+    // left: 60%;
+  }
+}
+
+.card {
+  //   display: flex;
+  //   justify-content: center;
+  //   margin: 0 auto;
+  width: 150px;
+  height: 200px;
+  border-radius: 0.5rem;
+  // background: url("../../assets/capita-marvel.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // filter: brightness(0.9);
+
+  cursor: pointer;
+
+  transform: scale(0.9);
+  transition: all ease 0.1s;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
