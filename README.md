@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Aplicação App Comics Marvel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sobre a aplicação
+Aplicação que é possível realizar buscas para visualizar quadrinhos da marvel e simular o envio de um quadrinho especifico para uma pessoa e traçar a rota para entrega.
 
-## Available Scripts
+![appMarvel](https://user-images.githubusercontent.com/37816505/149829836-cf2255df-8445-4d2a-be5a-15d06411f279.png)
 
-In the project directory, you can run:
+# Rota para entrega
 
-### `yarn start`
+A aplicaçção solicita sua localização inicial e usa a Api do Google para converter as suas coordenadas na sua cidade. A partir de um cadastro de um endereço para envio é usado para fazer a conversão da posição para coordenadas, e consequentemente é desenhado uma rota para entrega usando a API do GOOGLE MAPS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![App Marvel - Google Chrome 17_01_2022 17_00_39](https://user-images.githubusercontent.com/37816505/149830795-7dede629-dadf-4b58-9307-78951924815c.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Filtro de busca
 
-### `yarn test`
+A aplicaçção também orefece a funcionalidade de buscar quadrinho pelo título:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![App Marvel - Google Chrome 17_01_2022 17_06_15](https://user-images.githubusercontent.com/37816505/149831493-7d7f047a-8077-44d6-8ce8-9bdc2029d372.png)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As tecnologias que foram usadas para desenvolver essa aplicação:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# React 
+ Tecnologia utilizada para desenvolver a aplicação.
+* [React](https://reactjs.org/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Firebase 
+ Tecnologia utilizada para colocar a aplicação em produção.
+* [Firebase](https://firebase.google.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Google APIs Geocoding, Maps, Directions Services 
+ **Geocoding API** foi utilizada para converter coordenadas em endereços e para fazer o inverso também;
+ **Geocoding Maps** foi utilizada para renderizar o mapa na tela e também as rotas;
+ **Directions Services ** foi utilizada para fazer a manipulação com as rotas;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [Google APIs](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiGqM_9zbn1AhWSC5EKHTGVDBsYABAAGgJjZQ&ei=Ys_lYbOKGMWZ4-EP6u-v0AY&ohost=www.google.com&cid=CAESQeD2FjYWn4zouChqzee1vT89SccgWkbQ6np88W7Qh-eSnFd-XKe1i_cbB-Gp50Tg5JFpFgvyxbD9lN5HVUsHzLVt&sig=AOD64_2iyaA2N4jzuZt96Koca-t3G9bFCA&q&sqi=2&adurl&ved=2ahUKEwizw7z9zbn1AhXFzDgGHer3C2oQ0Qx6BAgDEAE)
 
-## Learn More
+  # Sass
+  Pré processador CSS
+* [Sass](https://sass-lang.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Api da Marvel
+Tecnologia utilizada para consumir os dados dos quadrinhos.
+* [API da MARVEL](https://developer.marvel.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Como executar
+Clone o projeto e acesse a pasta onde foi clonado.
+Para iniciá-lo usando o **yarn**, siga os passos abaixo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+# Instalar as dependências com yarn 
+$ yarn
+# Iniciar o projeto
+$ yarn start
+```
 
-### Analyzing the Bundle Size
+Para iniciá-lo usando o **npm**, siga os passos abaixo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+# Instalar as dependências com npm 
+$ npm install
+# Iniciar o projeto
+$ npm start
+```
+A aplicação rodará no seu browser pelo endereço http://localhost:3000.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
