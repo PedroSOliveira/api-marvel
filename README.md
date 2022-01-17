@@ -39,8 +39,8 @@ As tecnologias que foram usadas para desenvolver essa aplicação:
 
 * [Google APIs](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiGqM_9zbn1AhWSC5EKHTGVDBsYABAAGgJjZQ&ei=Ys_lYbOKGMWZ4-EP6u-v0AY&ohost=www.google.com&cid=CAESQeD2FjYWn4zouChqzee1vT89SccgWkbQ6np88W7Qh-eSnFd-XKe1i_cbB-Gp50Tg5JFpFgvyxbD9lN5HVUsHzLVt&sig=AOD64_2iyaA2N4jzuZt96Koca-t3G9bFCA&q&sqi=2&adurl&ved=2ahUKEwizw7z9zbn1AhXFzDgGHer3C2oQ0Qx6BAgDEAE)
 
-  # Sass
-  Pré processador CSS
+ # Sass
+ Pré processador CSS
 * [Sass](https://sass-lang.com/)
 
 # Api da Marvel
