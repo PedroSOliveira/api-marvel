@@ -1,5 +1,7 @@
 # Aplicação App Comics Marvel
 
+# Importante: Inserir chaves de api da marvel no arquivo src/services/Comics.js e chave da api do Google no arquivo src/components/map/index.jsx
+
 # Sobre a aplicação
 Aplicação que é possível realizar buscas para visualizar quadrinhos da marvel e simular o envio de um quadrinho especifico para uma pessoa e traçar a rota para entrega.
 
