@@ -7,13 +7,13 @@ Aplicação que é possível realizar buscas para visualizar quadrinhos da marve
 
 # Rota para entrega
 
-A aplicaçção solicita sua localização inicial e usa a Api do Google para converter as suas coordenadas na sua cidade. A partir de um cadastro de um endereço para envio é usado para fazer a conversão da posição para coordenadas, e consequentemente é desenhado uma rota para entrega usando a API do GOOGLE MAPS.
+A aplicação solicita sua localização inicial e usa a Api do Google para converter as suas coordenadas na sua cidade. A partir de um cadastro de um endereço para envio é usado para fazer a conversão da posição para coordenadas, e consequentemente é desenhado uma rota para entrega usando a API do GOOGLE MAPS.
 
 ![App Marvel - Google Chrome 17_01_2022 17_00_39](https://user-images.githubusercontent.com/37816505/149830795-7dede629-dadf-4b58-9307-78951924815c.png)
 
 # Filtro de busca
 
-A aplicaçção também orefece a funcionalidade de buscar quadrinho pelo título:
+A aplicação também orefece a funcionalidade de buscar quadrinho pelo título:
 
 ![App Marvel - Google Chrome 17_01_2022 17_06_15](https://user-images.githubusercontent.com/37816505/149831493-7d7f047a-8077-44d6-8ce8-9bdc2029d372.png)
 
