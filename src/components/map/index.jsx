@@ -24,7 +24,7 @@ export function Map() {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyDsWJrjWX6JP-8jjzEAsyG2kJa2G5rKxRY",
+    googleMapsApiKey: "",
   });
 
   const directionsServiceOptions = useMemo(() => {
